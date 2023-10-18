@@ -16,6 +16,7 @@ public class Main {
         Path of = Path.of(".");
         var firstP = new AtomicReference<Process>();
         var secondP = new AtomicReference<Process>();
+        var thirdP = new AtomicReference<Process>();
         Runnable first = () -> {
             try {
                 ProcessBuilder processBuilder = new ProcessBuilder().command("./runfirst.sh")
@@ -45,16 +46,34 @@ public class Main {
                 throw new RuntimeException(e);
             }
         };
+        Runnable third = () -> {
+            try {
+                ProcessBuilder processBuilder = new ProcessBuilder().command("./runthird.sh")
+                        .directory(of.toFile())
+                        .inheritIO();
+
+                Process start = processBuilder.start();
+                thirdP.set(start);
+                start.waitFor();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        };
         new Thread(first).start();
         Thread.sleep(2000);
         new Thread(second).start();
+        new Thread(third).start();
         Signal.handle(new Signal("INT"), sig ->  {
             firstP.get().toHandle().destroyForcibly();
             secondP.get().toHandle().destroyForcibly();
+            thirdP.get().toHandle().destroyForcibly();
         });
         Runtime.getRuntime().addShutdownHook(new Thread(() ->  {
             firstP.get().toHandle().destroyForcibly();
             secondP.get().toHandle().destroyForcibly();
+            thirdP.get().toHandle().destroyForcibly();
         }));
 
     }
