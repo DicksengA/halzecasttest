@@ -1,0 +1,166 @@
+Oct 18, 2023 7:41:38 AM com.hazelcast.instance.impl.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Oct 18, 2023 7:41:39 AM com.hazelcast.system.logo
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+Oct 18, 2023 7:41:39 AM com.hazelcast.system
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Copyright (c) 2008-2023, Hazelcast, Inc. All Rights Reserved.
+Oct 18, 2023 7:41:39 AM com.hazelcast.system
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Hazelcast Platform 5.3.2 (20230821 - b6cb479) starting at [192.168.1.239]:5701
+Oct 18, 2023 7:41:39 AM com.hazelcast.system
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Cluster name: dev
+Oct 18, 2023 7:41:39 AM com.hazelcast.system
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+Oct 18, 2023 7:41:39 AM com.hazelcast.system
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+Oct 18, 2023 7:41:39 AM com.hazelcast.internal.tpc.TpcServerBootstrap
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] TPC: disabled
+Oct 18, 2023 7:41:39 AM com.hazelcast.system.security
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+Oct 18, 2023 7:41:39 AM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Using Multicast discovery
+Oct 18, 2023 7:41:39 AM com.hazelcast.cp.CPSubsystem
+WARNING: [192.168.1.239]:5701 [dev] [5.3.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+Oct 18, 2023 7:41:39 AM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Oct 18, 2023 7:41:39 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] [192.168.1.239]:5701 is STARTING
+Oct 18, 2023 7:41:40 AM com.hazelcast.instance.impl.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+Oct 18, 2023 7:41:41 AM com.hazelcast.system.logo
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+Oct 18, 2023 7:41:41 AM com.hazelcast.system
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Copyright (c) 2008-2023, Hazelcast, Inc. All Rights Reserved.
+Oct 18, 2023 7:41:41 AM com.hazelcast.system
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Hazelcast Platform 5.3.2 (20230821 - b6cb479) starting at [192.168.1.239]:5702
+Oct 18, 2023 7:41:41 AM com.hazelcast.system
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Cluster name: dev
+Oct 18, 2023 7:41:41 AM com.hazelcast.system
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+Oct 18, 2023 7:41:41 AM com.hazelcast.system
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+Oct 18, 2023 7:41:41 AM com.hazelcast.internal.tpc.TpcServerBootstrap
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] TPC: disabled
+Oct 18, 2023 7:41:41 AM com.hazelcast.system.security
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+Oct 18, 2023 7:41:41 AM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Using Multicast discovery
+Oct 18, 2023 7:41:41 AM com.hazelcast.cp.CPSubsystem
+WARNING: [192.168.1.239]:5702 [dev] [5.3.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+Oct 18, 2023 7:41:42 AM com.hazelcast.internal.diagnostics.Diagnostics
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+Oct 18, 2023 7:41:42 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] [192.168.1.239]:5702 is STARTING
+Oct 18, 2023 7:41:42 AM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.239]:5701 - 44904d60-f916-47ec-9553-90d833319d11 this
+]
+
+Oct 18, 2023 7:41:42 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] [192.168.1.239]:5701 is STARTED
+Oct 18, 2023 7:41:43 AM com.hazelcast.internal.cluster.impl.MulticastJoiner
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Trying to join to discovered node: [192.168.1.239]:5701
+Oct 18, 2023 7:41:43 AM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Initialized new cluster connection between /192.168.1.239:5701 and /192.168.1.239:56938
+Oct 18, 2023 7:41:43 AM com.hazelcast.internal.server.tcp.TcpServerConnection
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Initialized new cluster connection between /192.168.1.239:56938 and /192.168.1.239:5701
+2023-10-18T07:41:43.193+0800 [main] WARN DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+Oct 18, 2023 7:41:44 AM com.hazelcast.internal.partition.impl.PartitionStateManager
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Initializing cluster partition table arrangement...
+2023-10-18T07:41:44.307+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:45.213+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:46.216+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:47.218+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:48.217+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+Oct 18, 2023 7:41:48 AM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.239]:5701 - 44904d60-f916-47ec-9553-90d833319d11 this
+	Member [192.168.1.239]:5702 - 66074aa2-09b2-4299-bd53-a4439def9b4b
+]
+
+Oct 18, 2023 7:41:48 AM com.hazelcast.internal.cluster.ClusterService
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.239]:5701 - 44904d60-f916-47ec-9553-90d833319d11
+	Member [192.168.1.239]:5702 - 66074aa2-09b2-4299-bd53-a4439def9b4b this
+]
+
+Oct 18, 2023 7:41:48 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] [192.168.1.239]:5702 is STARTED
+2023-10-18T07:41:48.556+0800 [main] WARN DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+Oct 18, 2023 7:41:48 AM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Repartitioning cluster data. Migration tasks count: 271
+Oct 18, 2023 7:41:48 AM com.hazelcast.internal.partition.impl.MigrationManager
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] All migration tasks have been completed. (repartitionTime=Wed Oct 18 07:41:48 SGT 2023, plannedMigrations=271, completedMigrations=271, remainingMigrations=0, totalCompletedMigrations=271)
+2023-10-18T07:41:49.224+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:49.621+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:50.214+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:50.591+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:51.214+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:51.587+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:52.214+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:52.591+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:53.214+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:53.590+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:54.213+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:54.593+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:55.214+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:55.591+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:56.216+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:56.591+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:57.219+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:57.591+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:58.219+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:58.592+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:41:59.220+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:41:59.592+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:42:00.217+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:42:00.590+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:42:01.213+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:42:01.593+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:42:02.218+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:42:02.587+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:42:03.219+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:42:03.586+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:42:04.217+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:42:04.590+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+2023-10-18T07:42:05.217+0800 [vert.x-eventloop-thread-0] INFO GET - Value : null
+2023-10-18T07:42:05.591+0800 [vert.x-eventloop-thread-0] INFO PUT - Put
+Oct 18, 2023 7:42:05 AM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] Running shutdown hook... Current node state: ACTIVE
+Oct 18, 2023 7:42:05 AM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Running shutdown hook... Current node state: ACTIVE
+Oct 18, 2023 7:42:05 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.239]:5702 [dev] [5.3.2] [192.168.1.239]:5702 is SHUTTING_DOWN
+Oct 18, 2023 7:42:05 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] [192.168.1.239]:5701 is SHUTTING_DOWN
+Oct 18, 2023 7:42:05 AM com.hazelcast.instance.impl.Node
+WARNING: [192.168.1.239]:5701 [dev] [5.3.2] Terminating forcefully...
+Oct 18, 2023 7:42:05 AM com.hazelcast.instance.impl.Node
+INFO: [192.168.1.239]:5701 [dev] [5.3.2] Shutting down multicast service...

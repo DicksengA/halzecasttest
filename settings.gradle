@@ -1,0 +1,5 @@
+rootProject.name = 'halzetcasttest'
+include("first")
+include("second")
+include("zorchestrator")
+
